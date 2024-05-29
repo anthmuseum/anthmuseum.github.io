@@ -1,4 +1,20 @@
 baseURL = 'https://anthmuseum.net'
 languageCode = 'en-ca'
-title = 'Anthropology Museum @ University of Winnipeg'
+title = 'Anthropology Museum'
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+enableGitInfo = true
+
+[params]
+subtitle = '@ University of Winnipeg'
+
+[[params.ananke_socials]]
+name = "github"
+url = "https://github.com/anthmuseum"
+
+[[params.ananke_socials]]
+name = "facebook"
+url = "https://facebook.com/uwinnipeg.anthropology.museum"
+
+[[params.ananke_socials]]
+name = "instagram"
+url = "https://instagram.com/uwinnipeg.anthropology.museum"
