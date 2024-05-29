@@ -1,0 +1,4 @@
+baseURL = 'https://anthmuseum.net'
+languageCode = 'en-ca'
+title = 'Anthropology Museum @ University of Winnipeg'
+theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
