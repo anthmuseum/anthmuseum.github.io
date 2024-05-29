@@ -6,6 +6,7 @@ enableGitInfo = true
 
 [params]
 subtitle = '@ University of Winnipeg'
+site_logo = "uwinnipeg-logo-black-4x.png"
 
 [[params.ananke_socials]]
 name = "github"
