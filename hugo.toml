@@ -8,14 +8,28 @@ enableGitInfo = true
 subtitle = '@ University of Winnipeg'
 site_logo = "uwinnipeg-logo-black-4x.png"
 
+
+background_color_class = "bg-blue"
+color_class = "white-90"
+body_classes = "avenir bg-near-white"
+custom_css = ["custom.css"]
+
+[[params.sponsor_logos]] 
+name = "UWinnipeg"
+logo = "uwinnipeg-logo-black-4x.png"
+url = "https://uwinnipeg.ca/anthropology-museum"
+
 [[params.ananke_socials]]
 name = "github"
 url = "https://github.com/anthmuseum"
+color = "white"
 
 [[params.ananke_socials]]
 name = "facebook"
 url = "https://facebook.com/uwinnipeg.anthropology.museum"
+color = "white"
 
 [[params.ananke_socials]]
 name = "instagram"
 url = "https://instagram.com/uwinnipeg.anthropology.museum"
+color = "white"
