@@ -1,12 +1,12 @@
 baseURL = 'https://anthmuseum.net'
 languageCode = 'en-ca'
-title = 'Anthropology Museum'
+title = 'ANTHMUSEUM.NET'
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 enableGitInfo = true
 
 [params]
-subtitle = '@ University of Winnipeg'
-site_logo = "uwinnipeg-logo-black-4x.png"
+description = '@ University of Winnipeg'
+#site_logo = "uwinnipeg-logo-black-4x.png"
 
 
 background_color_class = "bg-blue"
@@ -15,21 +15,11 @@ body_classes = "avenir bg-near-white"
 custom_css = ["custom.css"]
 
 [[params.sponsor_logos]] 
-name = "UWinnipeg"
+name = "University of Winnipeg Anthropology Museum"
 logo = "uwinnipeg-logo-black-4x.png"
 url = "https://uwinnipeg.ca/anthropology-museum"
 
 [[params.ananke_socials]]
 name = "github"
 url = "https://github.com/anthmuseum"
-color = "white"
-
-[[params.ananke_socials]]
-name = "facebook"
-url = "https://facebook.com/uwinnipeg.anthropology.museum"
-color = "white"
-
-[[params.ananke_socials]]
-name = "instagram"
-url = "https://instagram.com/uwinnipeg.anthropology.museum"
 color = "white"
