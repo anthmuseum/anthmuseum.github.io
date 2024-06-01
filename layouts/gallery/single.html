@@ -1,0 +1,6 @@
+{{ define "main" }}
+ <article class="cf w-100 pv3 pv4-l f3 tc-l center lh-copy w-80  {{ $.Param "text_color" | default "mid-gray" }}">
+    {{ .Content }}
+ </article>
+ 
+{{ end }}

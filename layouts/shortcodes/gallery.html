@@ -1,0 +1,11 @@
+<div class="gallery">
+<!-- mogrify -path thumb -thumbnail 200x200^ -gravity center -extent 200x200 *.jpg --> <!-- jhead -autorot  *.jpg -->
+{{ $ids := .Get "ids" }}
+{{ $ids_arr := split $ids "," }}
+{{ range $ids_arr }}
+ {{ $caption := index $.Site.Data.media . "caption" | markdownify }}
+ {{ $path := index $.Site.Data.media . "path" }}
+ {{ $thumb := delimit ( split $path "/" ) "/" "/thumb/" }}
+ <a href="{{ $path }}" class="gallery swipebox" title="{{ $caption }}"><img src="{{ $thumb }}" class="gallery-img" ></a>
+{{ end }}
+</div>

@@ -1,7 +1,7 @@
 <footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between items-center">
     {{ range .Site.Params.sponsor_logos }}
-    <a href="{{ .url }}" title="{{ .name }}">
+    <a class="f4 fw4 hover-white-70 no-underline {{ .Site.Params.color_class | default "light-silver" }} dn dib-ns pv2 ph3" href="{{ .url }}" title="{{ .name }}">
         <img src="{{ relURL .logo }}" class="w-100 mw5-ns" alt="{{ .name }}" />
     </a>
     {{ end }}

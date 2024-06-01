@@ -1,0 +1,29 @@
+<div class="center mw8-ns">
+<figure class="bg-near-white pa0 flex flex-wrap justify-center f3 {{ with .Get "class" }}{{ . }}{{ end }}">
+    <div class="db w-40-ns pv4"><img src="{{ .Get "src" }}"
+         {{- if or (.Get "alt") (.Get "caption") }}
+         alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+         {{- end -}}
+         {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+         {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+         {{ with .Get "alt" }} title="{{ . }}"{{ end }} 
+    />
+    </div>
+    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
+        <figcaption class="ph3 pv0 db tl w-60-ns v-top">
+            <!-- {{ with .Get "alt" }}<small class="lh-solid">{{ . }}</small>{{ end }} -->
+            {{ with (.Get "title") -}}
+                <h4>{{ . }}</h4>
+            {{- end -}}
+            {{- if or (.Get "caption") (.Get "attr") -}}<p>
+                {{- .Get "caption" | markdownify -}}
+                {{- with .Get "attrlink" }}
+                    <a href="{{ . }}">
+                {{- end -}}
+                {{- .Get "attr" | markdownify -}}
+                {{- if .Get "attrlink" }}</a>{{ end }}</p>
+            {{- end }}
+        </figcaption>
+    {{- end }}
+</figure>
+</div>
