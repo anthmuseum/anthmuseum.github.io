@@ -1,30 +1,38 @@
-<figure class="ba b--light-gray br2 bg-white pa0 w-100 w-40-l ma0 ma3-l {{ with .Get "class" }}{{ . }}{{ end }}"{{- if .Get "id" -}} id="{{ .Get "id"}}"{{- end -}}>
+<figure class="ba b--light-gray br2 bg-white pa0 w-100 w-60-m w-40-l mh3-ns mv3 mh0 ma0 {{ with .Get "class" }}{{ . }}{{ end }}"{{- if .Get "id" -}} id="{{ .Get "id"}}"{{- end -}}>
     {{- if .Get "link" -}}
         <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
     {{- end -}}
-    <img src="{{ .Get "src" }}"
-         {{- if or (.Get "alt") (.Get "caption") }}
+  <img class="mw-100"
+    
+       {{- with $.Get "src" }}
+       {{- with $i := $.Page.Resources.Get . }}
+       {{- with $i.Fit "600x600" -}}
+
+       src="{{ .RelPermalink }}"  {{- end -}}{{- end -}}{{- end -}}
+       {{- if or (.Get "alt") (.Get "caption") }}
          alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
          {{- end -}}
-         {{- with .Get "width" }} width="{{ . }}"{{ end -}}
-         {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+
          {{ with .Get "alt" }} title="{{ . }}"{{ end }}
     /><!-- Closing img tag -->
+
+    
     {{- if .Get "link" }}</a>{{ end -}}
     {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
-        <figcaption class="ph4 pv2 lh-copy">
+        <figcaption class="ph4 pv2 lh-copy"><p>
             <!-- {{ with .Get "alt" }}<small class="lh-solid">{{ . }}</small>{{ end }} -->
             {{ with (.Get "title") -}}
-                <h4>{{ . }}</h4>
+                <span class="dib f2 fw6 lh-solid pr3">{{ . }}</span>
             {{- end -}}
-            {{- if or (.Get "caption") (.Get "attr") -}}<p>
+            {{- if or (.Get "caption") (.Get "attr") -}}
                 {{- .Get "caption" | markdownify -}}
                 {{- with .Get "attrlink" }}
                     <a href="{{ . }}">
                 {{- end -}}
                 {{- .Get "attr" | markdownify -}}
-                {{- if .Get "attrlink" }}</a>{{ end }}</p>
+                {{- if .Get "attrlink" }}</a>{{ end }}
             {{- end }}
+            </p>
         </figcaption>
     {{- end }}
 </figure>
