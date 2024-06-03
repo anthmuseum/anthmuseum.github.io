@@ -1,4 +1,4 @@
-<figure class="ba b--light-gray br2 bg-white pa0 w-100 mw6-m w-40-l mh3-ns mv3 mh0 ma0 {{ with .Get "class" }}{{ . }}{{ end }}"{{- if .Get "id" -}} id="{{ .Get "id"}}"{{- end -}}>
+<figure class="bg-white pa0 w-100 mw6-m w-40-l mh3-ns mv3 mh0 ma0 {{ with .Get "class" }}{{ . }}{{ end }}"{{- if .Get "id" -}} id="{{ .Get "id"}}"{{- end -}}>
     {{- if .Get "link" -}}
         <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
     {{- end -}}
