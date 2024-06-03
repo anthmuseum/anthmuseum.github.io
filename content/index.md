@@ -80,14 +80,14 @@ Cyborg experiments in research and interpretation, for museums of ethnography an
     src="felt.png" 
     alt="" 
     title="Felt-making" 
-    caption="Discovering nomadic culture through textiles" 
+    caption="Discovering sustainable culture in textiles" 
 >}}
 
 {{< figure 
     src="transponder-01.png" 
     alt="" 
     title="Transponder" 
-    caption="Messages to future colonizers" 
+    caption="Messages to colonizers from another world" 
 >}}
 
 {{< figure 
