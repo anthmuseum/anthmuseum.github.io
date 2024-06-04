@@ -3,24 +3,19 @@
         <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
     {{- end -}}
   <img class="mw-100"
-    
        {{- with $.Get "src" }}
        {{- with $i := $.Page.Resources.Get . }}
        {{- with $i.Fit "600x600" -}}
 
        src="{{ .RelPermalink }}"  {{- end -}}{{- end -}}{{- end -}}
-       {{- if or (.Get "alt") (.Get "caption") }}
-         alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+       {{- if (.Get "alt")  }}
+         alt="{{ with .Get "alt" }}{{ . }}{{ end }}"
          {{- end -}}
-
-         {{ with .Get "alt" }} title="{{ . }}"{{ end }}
     /><!-- Closing img tag -->
-
     
     {{- if .Get "link" }}</a>{{ end -}}
     {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
         <figcaption class="ph4 pv2 lh-copy"><p>
-            <!-- {{ with .Get "alt" }}<small class="lh-solid">{{ . }}</small>{{ end }} -->
             {{ with (.Get "title") -}}
                 <span class="dib f2 fw6 lh-solid pr3">{{ . }}</span>
             {{- end -}}
