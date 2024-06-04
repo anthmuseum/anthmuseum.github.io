@@ -15,7 +15,7 @@ Cyborg experiments in research and interpretation, for museums of ethnography an
 
 {{< figure 
     src="seonsory-box-02.png" 
-    alt="Wooden gift box containing juniper, pine cones, sand, berries, and wool" 
+    alt="Wooden gift box containing juniper, pine cones, sand, berries, butter, and wool" 
     title="Sensory box" 
     caption="Gifting experiences of smell, touch, taste" 
 >}}
@@ -50,21 +50,21 @@ Cyborg experiments in research and interpretation, for museums of ethnography an
 
 {{< figure 
     src="pebbles-03.png" 
-    alt="Marble-like pebbles on the ground in the desert, with a group of children playing in the background" 
+    alt="Pebbles laid out on the ground like marbles in the desert, with a group of children playing in the background" 
     title="Games of the world" 
     caption="Learning to/from play" 
 >}}
 
 {{< figure 
     src="megaphones-01.png" 
-    alt="Abstract drawing of a crowd of people speaking to one another with megaphones" 
+    alt="Drawing of a crowd of people speaking to one another with megaphones" 
     title="Multivocal metadata" 
     caption="The postmodern museum catalogue" 
 >}}
 
 {{< figure 
     src="qda-02.png" 
-    alt="Steampunk drawing of a man operating a computer with manual typewriter input" 
+    alt="Drawing of a man operating a steampunk computer with manual typewriter input" 
     title="Coding machine" 
     caption="Open QDA for museums and archives" 
 >}}
@@ -99,7 +99,7 @@ Cyborg experiments in research and interpretation, for museums of ethnography an
 
 {{< figure 
     src="headphones-02.png" 
-    alt="A man wearing headphones and listening pensively to a ceramic plate" 
+    alt="A man wearing headphones and listening pensively to a ceramic bowl in a museum" 
     title="Listening to artifacts" 
     caption="Hearing objects speak" 
 >}}
