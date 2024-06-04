@@ -38,7 +38,7 @@ Cyborg experiments in research and interpretation, for museums of ethnography an
     src="scaffolding-03.png" 
     alt="Brightly coloured scaffolding with works of art and ethnographic objects" 
     title="Scaffolding" 
-    caption="The temporary museum" 
+    caption="The museum as temporary structure" 
 >}}
 
 {{< figure 
