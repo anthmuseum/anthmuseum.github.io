@@ -10,7 +10,7 @@ Cyborg experiments in research and interpretation, for museums of ethnography an
     src="radio.png" 
     alt="Midcentury modern style tabletop radio" 
     title="Soundscape tuner" 
-    caption="Tabletop device for navigating soundscapes" 
+    caption="Tabletop soundscape navigation" 
 >}}
 
 {{< figure 
